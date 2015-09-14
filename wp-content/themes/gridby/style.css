@@ -1,0 +1,598 @@
+/*
+Theme Name: 	GRIDBY
+Theme URI:     	http://www.marchettidesign.net/
+Description: 	Responsive Wordpress Theme based on Boostrap and Font Awesome. 
+Version:     	1.0.1
+Author:     	Andrea Marchetti
+Author URI:    	http://www.marchettidesign.net/chisono
+Site:         	http://www.marchettidesign.net
+Tags:        	responsive-layout,custom-menu, featured-images, fluid-layout, full-width-template, left-sidebar, right-sidebar, theme-options
+License:    	GNU General Public License v3.0
+License URI:	http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/* Style Tree 
+
+    1.  Base Styles
+    2.  Menu
+    3.  Home
+    4.  Index
+    5.  Sidebar
+    6.  Footer
+    7.  Common Elements
+    8.	WP General Format
+    9.  Responsive
+        
+*/
+
+body, html { margin: 0; padding: 0; height: 100%; font-size: 16px; font-family: Source Sans Pro;}
+body{background: #efefef;}
+body.admin-bar .navbar-fixed-top { position: fixed; top: 32px; z-index: 1000; height: 40px; }
+
+
+/* ------------------------------------------------------------------------- *
+ *  1. Base Styles
+/* ------------------------------------------------------------------------- */
+
+
+	/* Functional class */
+	
+	.spacer{height: 50px;}
+	.margin-top { margin-top: 20px; }
+	.margin-bottom { margin-bottom: 20px; }
+	.no-margin { margin: 0; padding: 0; }
+	.clear-hr { float: left; clear: both; width: 100%; }
+	.animate { 	-webkit-transition: all 0.5s ease-in-out; 
+				-moz-transition: all 0.5s ease-in-out; 
+				-ms-transition: all 0.5s ease-in-out; 
+				-o-transition: all 0.5s ease-in-out; 
+				transition: all 0.5s ease-in-out; }
+				
+	.hidden-mobile{ }
+	.hidden-desktop{display:none;}
+	
+
+	/* Link color */
+	
+	a, .link-color{ color: #02c29d;}
+	a:hover{ color: #ff0052;text-decoration: none;}
+	
+	
+	/* Line grid color */
+	
+	.sep-line{border-top: 5px solid #00ebbe;}
+	
+	
+	/* Button */
+	
+	.btn.outline { margin-top: 15px; margin-right: 7px; margin-bottom:10px; margin-left: 7px; padding: 12px 22px; border-radius:0; border-radius: 2px; background: none; text-transform: uppercase; text-shadow: none;}
+	.btn-primary.outline { border: 2px solid #00ebbe; background: #00ebbe; color:#333; }
+	.btn-primary.outline:hover { border-color: #ff0052; background: #ff0052; color: #fff; }
+	
+	/* Color of submit button form */
+	
+	#submit { background: #333; }
+
+
+
+/* ------------------------------------------------------------------------- *
+ *  2. Menu
+/* ------------------------------------------------------------------------- */
+
+.navbar { margin: 0; border: none; border-radius: 0; background-color: #fff; background-image: none; text-transform: uppercase; }
+.navbar-header h1 { margin: 0; }
+.navbar-inverse .navbar-brand { padding-bottom: 11px; color: #333; letter-spacing: -2px; font-weight: 300; font-size: 28px;  }
+.navbar-inverse .navbar-brand .fa {  margin-right: 5px; font-size: 25px; }
+
+
+	/* Color of menu button */
+	
+	.navbar-inverse .navbar-nav > li > a,
+	.navbar-inverse .navbar-nav > li > a:focus { color: #333;}
+	
+	/* Color of menu button:hover */
+	
+	.navbar-inverse .navbar-nav > li > a:hover { background: #f6f6f6; }
+	
+	
+	.navbar-inverse .navbar-brand:hover,
+	.navbar-inverse .navbar-nav > li > a:hover{color: #ff0052;}
+
+	.navbar-inverse .navbar-nav > .active > a,
+	.navbar-inverse .navbar-nav > .active > a:hover,
+	.navbar-inverse .navbar-nav > .active > a:focus,
+	.dropdown-menu > .active > a,
+	.dropdown-menu > .active > a:hover,
+	.dropdown-menu > .active > a:focus { border-bottom:5px solid #00ebbe; background: #fff; color:#333;}
+	
+	
+	/* Menu & Logo Height */
+	
+	.navbar { min-height: 90px; }
+	.navbar-brand,
+	.navbar-nav li a {     
+	    padding-top: 0; 
+	    height: 90px;
+	    line-height: 90px; 
+	}
+	.navbar .logo-img img{width:auto; height: 90px;} 
+	.spacer { height: 90px; }
+
+	
+	
+	
+/* ------------------------------------------------------------------------- *
+ *  3. Home
+/* ------------------------------------------------------------------------- */
+
+.home-title { position: absolute; top:-100px; color: #fff; font-size: 12px;}
+
+	/* Cover */
+	
+	.cover { height: 100%; margin-top:30px; position: relative; overflow: hidden}
+	.cover .fill { position: absolute; z-index: 0;width: 100%; height: 100%; }
+	.cover .fill-color{ position: absolute; z-index: 2;width: 100%; height: 100%;background:#000;opacity: 0.5; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";}
+	.cover .container-caption{ position: relative;z-index: 10; display:table;width:100%; height: 100%;}
+	.cover .cover-caption {position: relative;right:0;  bottom: 0;left:0; display: table-cell;margin: 0;padding: 20px; text-align: center; vertical-align: middle; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);}
+	.cover .cover-caption h2{ font-weight: 100;font-size: 55px;color:#fff;}
+	.cover .cover-caption h3{font-weight: 300;color:#fff}
+	.cover .cover-caption strong{text-transform: uppercase;color:#fff;}
+	
+	
+	.arrow-down{cursor: pointer}
+	.arrow-down i{color:#fff;font-size: 55px;}
+	
+	/* Arrow Bouncing 2 Times */
+	
+	.arrow-bouncing{ display: inline-block;
+    animation: .7s down infinite alternate;
+    -webkit-animation: .7s down infinite alternate;}
+	
+		/***Animation Arrow down***/
+		@keyframes down{
+		    0%{transform:translateY(0px)}
+		    100%{transform:translateY(15px)}
+		}
+		@-webkit-keyframes down{
+		    0%{-webkit-transform:translateY(0px)}
+		    100%{-webkit-transform:translateY(15px)}
+		}
+	
+	
+	#message-before-grid{background: #fff; padding:20px 0 40px 0; text-align: center; float:left; width:100%;margin-bottom: 60px;}
+	#message-before-grid .intro-title{margin:10px!important;}
+	
+	.anchor{display: block; position: relative; top: -92px; visibility: hidden;}
+
+	
+
+
+/* ------------------------------------------------------------------------- *
+ *  4. Index
+/* ------------------------------------------------------------------------- */
+
+	
+	/* Post & Page */
+	
+	.post-content, 
+	.page-content { padding: 0 0 40px 0; }
+	
+		/* Titles */
+		
+		.intro-title { padding: 20px 0 10px 0; text-align: center; font-weight: 300; font-size: 55px; }
+		.page .intro-title { margin-bottom: 30px; }
+		.intro-grid{text-align: center;}
+		.intro-grid h1{ padding: 20px 0 0px 0;  font-weight: 300; font-size: 45px; }
+		.sub-title { margin:0; padding: 0px 0 20px 0; text-align: center; font-size: 16px; }
+	
+		/* Post Title & Meta */
+		
+		.single-title { padding: 40px 0 0px 0; font-weight: 300; font-size: 45px; }
+		.list-title { margin: 10px 0 5px 0; padding: 0;}
+		.list-title a { font-weight: 300; font-size: 35px;  }
+		.meta { margin-bottom: 20px;}
+		.cont-tag { clear: both; padding-top: 20px; }
+		
+		.list-item{ margin-top: 35px; }
+		
+		/* Image */
+		
+		.list-cover, 
+		.single-cover { margin-bottom: 20px; width: 100%; height: auto; }
+		
+		/* Image video from youtube */
+		
+		.link-video { position: relative; }
+		.link-video img{width:100%; height:auto;}
+		.link-video i { position: absolute; top: 50%; left: 50%; margin: -35px 0 0 -25px; background: url("img/circle-white.png") no-repeat center center; }
+		
+		/* Gallery */
+		
+		.gallery { float: left; padding: 20px 0 0 0; width: 103.8%; }
+		.gallery-item { float: left; width: 33.333333%; text-align: center; }
+		.gallery img { margin: 0 10% 10% 0; width: 90%; height: auto; border: none!important; }
+		.gallery-caption { width: 90%; }
+		
+		
+		
+/* ------------------------------------------------------------------------- *
+ *  4.1 Grid
+/* ------------------------------------------------------------------------- */	
+	
+	.mos-container{margin-bottom: 60px;}
+		
+	/*  Mosaic (Isotope) */
+	
+	.mos-container .mos-item {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		margin: 0 10px 20px 10px; /* Margin of the grid see script.js for horizontal margin */
+		width: 33.333333%;
+		height: 300px;	
+		color:#fff;
+		-webkit-box-shadow:  0 0 5px rgba(0,0,0,0.1);
+		-moz-box-shadow:  0 0 5px rgba(0,0,0,0.1);
+		box-shadow:  0 0 5px rgba(0,0,0,0.1); 
+	}
+	
+	/* Background Image/Color */
+	
+	.mos-container .mos-item .bg-img{ position: absolute; top: 0; right: 0; bottom: 0;left: 0; z-index: 0; width: 100%; height: 100%; 
+		background-position: center center;
+		background-size: cover; opacity: 1;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;			
+	} 
+	
+	
+	.mos-item:hover > .bg-img{width:108%;margin-left: -4%;top: 0; right: 0;}
+	
+	
+	
+	a.mos-panel{position: relative; display:table;padding:20px;width:100%; height: 100%; color:#fff;text-align: center;}
+	.mos-inner{display: table-cell; vertical-align: middle; }
+	.mos-title {margin-bottom: 15px; font-weight: 300;font-size: 42px;margin-top: 0;}
+	.mos-inner p{margin: 0 auto;max-width: 500px;}
+	.mos-inner .fa{margin-top: 12px;}
+	
+	.mos-item .mos-panel{ display:table; width:100%; height: 100%;background: url("img/bg-light-black.png"); opacity: 0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+	.mos-item:hover > .mos-panel{ opacity: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; } 
+	
+	.sep-line{margin-top:20px; margin-bottom:15px;margin-right: auto; margin-left:auto; padding:0px 0 0px 0; width:30px;}
+	
+	
+	/********************** Animation 360  **********************/
+
+	.mos-item .bar-top,
+	.mos-item .bar-right,
+	.mos-item .bar-bottom,
+	.mos-item .bar-left{background: #fff; position: absolute;
+		-moz-transition: 0.25s;
+		-o-transition: 0.25s;
+		-webkit-transition: 0.25s;
+		transition: 0.25s;
+		-webkit-transition-delay: 0s;
+	    transition-delay: 0s;
+	}
+	
+	
+	.mos-item .bar-top{height: 15px;width: 0px;top:  0;left: 0;
+		-webkit-transition-delay: 0s;
+	    transition-delay: 0s;	
+	}
+	.mos-item .bar-right{height: 0px;width: 15px;top: 0;right: 0;
+		-webkit-transition-delay: 0.25s; 
+	    transition-delay: 0.25s;	
+	}
+	.mos-item .bar-bottom{height: 15px;width: 0px;bottom: 0;right: 0;
+		-webkit-transition-delay: 0.5s; 	    
+		transition-delay: 0.5s;
+	}
+	.mos-item .bar-left{height: 0px;width: 15px;bottom: 0;left: 0;
+		-webkit-transition-delay: 0.75; 
+	    transition-delay: 0.75s;	
+	} 
+	
+	/*
+	.mos-item .bar-top{height: 15px;width: 0px;top:  0;left: 0;
+			
+	}
+	.mos-item .bar-right{height: 0px;width: 15px;top: 0;right: 0;
+			
+	}
+	.mos-item .bar-bottom{height: 15px;width: 0px;bottom: 0;right: 0;
+		
+	}
+	.mos-item .bar-left{height: 0px;width: 15px;bottom: 0;left: 0;
+		
+	} */
+	
+	/* Animation Hover */
+	.mos-item:hover .bar-top{ width: 100%;  }
+	.mos-item:hover .bar-right{ height: 100%; }
+	.mos-item:hover .bar-bottom{ width: 100%; }
+	.mos-item:hover .bar-left{ height: 100%;  }
+
+
+
+/* ------------------------------------------------------------------------- *
+ *  5. Sidebar
+/* ------------------------------------------------------------------------- */
+
+.margin-side{margin-top: 40px;}
+
+.widget { float: left; margin-bottom: 30px; width: 100%;}
+.widget h3 { margin: 0 0 10px 0; }
+.widget a { display: block; padding: 10px 0; border-bottom: 1px solid #fff; }
+.widget ul { padding: 0; }
+.widget ul li { list-style-type: none; }
+
+
+	/* Calendar Widget */
+	
+	#wp-calendar { width: 100%; }
+	#wp-calendar a { padding: 0; border: none; }
+	#wp-calendar caption,
+	.screen-reader-text { padding-bottom: 10px; color: #000; text-align: left; text-transform: uppercase; font-weight: 700; font-size: 14px; }
+	#wp-calendar thead { font-size: 10px; }
+	#wp-calendar thead th { padding-bottom: 10px; }
+	#wp-calendar tbody { color: #aaa; }
+	#wp-calendar tbody td { padding: 8px; border: 1px solid #fff; background: #f5f5f5; text-align: center; }
+	#wp-calendar tbody td:hover { background: #fff; }
+	#wp-calendar tbody .pad { background: none; }
+	#wp-calendar tfoot #next { text-align: right; text-transform: uppercase; font-size: 10px; }
+	#wp-calendar tfoot #prev { padding-top: 10px; text-transform: uppercase; font-size: 10px; }
+	
+	
+	
+/* ------------------------------------------------------------------------- *
+ *  6. Footer
+/* ------------------------------------------------------------------------- */
+
+.footer { float: left; margin: 0; width: 100%;border-top: 1px solid #eee; background: #fff; }
+.footer p{margin: 0;}
+.footer .container{ padding: 20px; }
+	
+	.social { text-align: right; }
+	.social a { margin-left: 10px; }
+	
+	.footer p{float:left;}
+	.footer nav{float:left;}
+	.footer nav a{padding-left:6px;}
+
+
+/* ------------------------------------------------------------------------- *
+ *  7. Common elements
+/* ------------------------------------------------------------------------- */
+
+	.pagination { float: left; margin: 0 0 20px 0; padding: 0; width: 100%; }
+	.pagination span,
+	.pagination a { float: left; margin-right: 10px; padding: 9px 14px; border: 1px solid #eee; }
+	
+	/* Video resposnive */
+	
+	.video-container { position: relative; z-index: 0; overflow: inherit; margin-bottom: 20px; padding-top: 25px; padding-bottom: 56.25%; /* 16: 9 */height: 0;; }
+	.video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+	
+	/* Comments */
+	
+	#comments { width: 100%; }
+	
+	/* Comments Form */
+	
+	.comment-form-author,
+	.comment-form-email,
+	.comment-form-url { float: left; margin-top: 20px; margin-right: 3%; width: 30.3333333%; }
+	.comment-form-author input,
+	.comment-form-email input,
+	.comment-form-url input { width: 100%; }
+
+	
+	ol.commentlist { margin: 0 0 1em; padding: 0; list-style: none; text-indent: 0; }
+	ol.commentlist li.comment { padding: 1em; border-top: 1px solid #eee; }
+	ol.commentlist li.comment div.vcard cite.fn { text-transform: uppercase; font-size: 14px; }
+	ol.commentlist li.comment div.vcard img.avatar { float: left; margin: 6px 1em 1em 0; border-radius: 50px; }
+	ol.commentlist li.comment div.comment-meta { font-size: 12px; }
+	ol.commentlist li.comment ul { margin: 0 0 1em 2em; }
+	ol.commentlist li.comment div.reply { margin-left: 80px; font-size: 11px; }
+	ol.commentlist li.comment div.reply a { font-weight: bold; }
+	ol.commentlist li.comment ul.children { margin: 1em 0 0; list-style: none; text-indent: 0; }
+	ol.commentlist li.comment ul.children li.depth-2 { margin: 0 0 .25em .25em; border-left: 1px solid #eee; }
+	ol.commentlist li.comment ul.children li.depth-3 { margin: 0 0 .25em .25em; border-left: 1px solid #eee; }
+	ol.commentlist li.comment ul.children li.depth-4 { margin: 0 0 .25em .25em; border-left: 1px solid #eee; }
+	ol.commentlist li.even { border-top: 1px solid #fff; }
+	ol.commentlist li.odd { /* background: #f9f9f9; */  }
+	ol.commentlist li.parent { border-left: 1px solid #eee; }
+	ol.commentlist li.bypostauthor .fn { font-weight: bold; }
+	ol.commentlist li img{max-width: 97%;}
+	
+	input { margin-right: 10px; padding: 10px; border: none;  border-radius: 0; background: #fff; -webkit-appearance: none;}
+	textarea { padding: 10px; width: 97%; border: none; background: #fff; }
+	#submit { margin-top: 10px; padding: 15px 20px; color: #fff; text-transform: uppercase; }
+	
+	/* Search */
+	
+	#srch-term { border: none; background: none; box-shadow: none; color: #fff; opacity: 0; }
+	
+	/* Search bar menu */
+	
+	.search-header .input-group:hover { background: #394661; }
+	.search-header .input-group:hover > #srch-term { opacity: 1; }
+	.search-header .input-group:hover .input-group-btn > .btn-default { border: none; background: none; color: #fff; }
+	.search-cont { padding: 0; }
+	.search-cont .form-control { color: #fff; }
+	.btn-default { border: none; background: none; }
+	.btn-default:hover { border: none; background: none; color: #fff; }
+	.form-control::-moz-placeholder { color: #eee; }
+	.search-light { background: #eee; }
+	.search-light input { width: 100%; color: #333; }
+
+
+/* ------------------------------------------------------------------------- *
+ *  8. WP General Format
+/* ------------------------------------------------------------------------- */
+	
+.alignleft { float: left; margin-right: 20px; margin-bottom: 20px; max-width: 97%; height: auto; }
+.alignright { float: right; margin-bottom: 20px; margin-left: 20px; max-width: 97%; height: auto; }
+.aligncenter { display: block; margin: 0 auto; max-width: 97%; height: auto; }
+.alignnone { max-width: 97%; height: auto; }
+.sticky { border-right: 3px solid #eee; border-bottom: 3px solid #eee; }
+
+.wp-caption { margin-bottom: 20px; padding: 10px; max-width: 97%; border: 1px solid #eee; text-align: center; }
+.wp-caption img { margin: 0; padding: 0; width: 100%!important; height: auto; border: 0 none; }
+.wp-caption p.wp-caption-text { margin: 0; padding: 8px; font-size: 1em; line-height: 17px; }
+
+.comments_rss{margin-bottom: 20px;}
+
+
+/* General Bootstrap */
+/* .row{margin:0; */
+/* padding:0; */
+/* change the height of navbar */
+/* .navbar-brand,
+.navbar-nav li a {
+    line-height: 90px; */
+/* height: 90px; */
+/* padding-top: 0; */
+
+
+/* ------------------------------------------------------------------------- *
+ *  9. Responsive
+/* ------------------------------------------------------------------------- */
+
+@media (min-width: 1000px) { 
+
+	#mainmenu .dropdown-menu .sub-menu {
+	    position: absolute;
+	    top: 0;
+	    left: 100%;
+	    visibility: hidden;
+	    margin-top: -1px;
+	}
+	
+	#mainmenu .dropdown-menu li:hover .sub-menu {
+	    visibility: visible;
+	}
+	
+	#mainmenu .dropdown:hover .dropdown-menu {
+	    display: block;
+	}
+	
+	#mainmenu .nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+	    margin-top: 0;
+	}
+	
+	#mainmenu .navbar .sub-menu:before {
+	    top: 10px;
+	    left: -7px;
+	    border-top: 7px solid transparent;
+	    border-right: 7px solid rgba(0, 0, 0, 0.2);
+	    border-bottom: 7px solid transparent;
+	    border-left: none;
+	}
+	#mainmenu .navbar .sub-menu:after {
+	    top: 11px;
+	    left: 10px;
+	    left: -6px;
+	    border-top: 6px solid transparent;
+	    border-right: 6px solid #fff;
+	    border-bottom: 6px solid transparent;
+	    border-left: none;
+	}
+	
+	.container-header{padding: 0 30px 0 30px;}
+	
+		
+}
+
+
+@media (max-width: 1024px) { 
+	
+	.navbar .logo-img img{width:auto; height: 50px;}
+	
+	.cover .cover-caption h2{font-size: 32px;}
+	.cover .cover-caption h3{font-size: 20px;}
+	
+	.fill{top:0!important;} /* Block Parallax Effect*/
+	
+	#message-before-grid{padding:20px 0 20px 0;}
+	
+	.mos-title{font-size: 34px;}
+	
+	.hidden-mobile{display: none;}
+	.hidden-desktop{display:block;}
+	
+	.content-excerpt{display: none;}
+	
+	
+	
+}
+
+
+@media (max-width: 767px) { 
+	
+	/* Menu */
+	
+	.spacer{height: 70px;}
+	.navbar { min-height: 70px; }
+	.navbar-brand,
+	.navbar-nav li a {     
+	    padding-top: 0; 
+	    height: 70px;
+	    line-height: 70px; 
+	}
+	.navbar .logo-img img{width:auto; height: 70px;} 
+	.navbar-collapse {border-top: 1px solid #ccc !important;}
+	
+	.navbar-inverse .navbar-nav > .active > a,
+	.navbar-inverse .navbar-nav > .active > a:hover,
+	.navbar-inverse .navbar-nav > .active > a:focus,
+	.dropdown-menu > .active > a,
+	.dropdown-menu > .active > a:hover,
+	.dropdown-menu > .active > a:focus { border-bottom:none; background: #00ebbe; color:#fff;}
+
+		.navbar-inverse .navbar-toggle { margin-top: 18px;margin-right: 15px; padding: 9px 10px;border: none;}
+		.navbar-inverse .navbar-toggle .icon-bar { width: 25px; height: 3px; border-radius: 1px;background-color: black; }	
+		
+		.navbar-inverse .navbar-toggle:hover,
+		.navbar-inverse .navbar-toggle:focus { background-color: #fff;}
+	
+	
+	/* Cover */
+	.cover{margin-top:70px;}
+	.cover .cover-caption h2{font-weight: 300;font-size: 28px;}
+	.cover .cover-caption h3{font-weight: 500;font-size: 20px;}
+	
+	
+	.anchor{top: -72px}
+	
+	
+	/* Grid */
+	
+	.container-grid{padding:0;}	
+	
+	
+	
+	.mos-inner p{font-size:14px;}
+	.mos-title{font-size: 22px;}
+	
+	
+	.intro-title{margin-bottom: 30px; padding:0;font-size: 34px; }
+	
+	.list-title{ margin-bottom: 10px; }
+	.list-item{margin-bottom: 80px;}
+	
+	.content-excerpt{display: block;}
+
+	
+	.comment-form-author, 
+	.comment-form-email, 
+	.comment-form-url{margin-top:0;width:97%;}
+	
+	.hidden-xs{display: none;}
+	
+	.footer .pull-right{float:left!important; }
+
+}

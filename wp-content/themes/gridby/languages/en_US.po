@@ -1,0 +1,301 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fullbase\n"
+"POT-Creation-Date: 2015-08-28 15:33+0100\n"
+"PO-Revision-Date: 2015-08-28 15:33+0100\n"
+"Last-Translator: Andrea Marchetti <afmarchetti@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:10
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:11
+msgid "404 Error"
+msgstr ""
+
+#: ../404.php:13
+msgid ""
+"The page you are trying to reach does not exist, or has been moved. Please "
+"use the menus or the search box to find what you are looking for."
+msgstr ""
+
+#: ../comments.php:6
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../comments.php:13
+msgid "No Responses"
+msgstr ""
+
+#: ../comments.php:13
+msgid "1 Response"
+msgstr ""
+
+#: ../comments.php:13
+msgid "% Responses"
+msgstr ""
+
+#: ../comments.php:38 ../comments.php:46
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:57
+msgid "Submit Comment"
+msgstr ""
+
+#: ../comments.php:63
+msgid "Comments RSS Feed"
+msgstr ""
+
+#: ../footer.php:24
+msgid "TOP"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:161
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:162
+msgid "Install Plugins"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:163
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:175
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:177
+#: ../functions/class-tgm-plugin-activation.php:1945
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:178
+#: ../functions/class-tgm-plugin-activation.php:1636
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/class-tgm-plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:534
+#: ../functions/class-tgm-plugin-activation.php:2162
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1169
+msgid "Private Repository"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1172
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1177
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1180
+msgid "Required"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1180
+msgid "Recommended"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1183
+msgid "Not Installed"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1185
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1290
+#: ../functions/class-tgm-plugin-activation.php:1398
+msgid "Install"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1312
+#: ../functions/class-tgm-plugin-activation.php:1399
+msgid "Activate"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1361
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1377
+msgid "Plugin"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1378
+msgid "Source"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1379
+msgid "Type"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1380
+msgid "Status"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1928
+msgid "Install package not available."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1929
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1930
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1931
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1932
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1933
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:1944
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:2058
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:2059
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:2059
+#: ../functions/class-tgm-plugin-activation.php:2068
+msgid "Show Details"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:2059
+#: ../functions/class-tgm-plugin-activation.php:2068
+msgid "Hide Details"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:2060
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:2061
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:2065
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:2066
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:2068
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:2069
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../functions/class-tgm-plugin-activation.php:2070
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../functions/theme-customizer.php:18
+msgid "Grid"
+msgstr ""
+
+#: ../functions/theme-customizer.php:20
+msgid "Set up the text before the grid."
+msgstr ""
+
+#: ../functions/theme-customizer.php:31
+msgid "Title"
+msgstr ""
+
+#: ../functions/theme-customizer.php:45
+msgid "Description"
+msgstr ""
+
+#: ../index.php:8
+msgid "Result for:"
+msgstr ""
+
+#: ../index.php:64 ../page-templates/cover-grid.php:50
+#: ../page-templates/cover.php:47 ../page-templates/grid.php:43 ../page.php:19
+#: ../single-fb_contents.php:24 ../single.php:37
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: ../index.php:65
+msgid "Try to make a search..."
+msgstr ""
+
+#: ../page.php:13
+msgid "Read More..."
+msgstr ""
+
+#: ../searchform.php:3
+msgid "Search"
+msgstr ""

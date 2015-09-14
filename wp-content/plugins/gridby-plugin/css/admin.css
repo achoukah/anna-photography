@@ -1,0 +1,37 @@
+.el-metabox{
+    padding-bottom: 40px;width:100%;clear: both; 
+}
+
+.el-metabox input{
+	border: 1px solid #ccc; padding:10px; 
+}
+
+.el-metabox label{
+	float:left; width:100%;
+	border-bottom: 1px dashed #ccc;
+	margin: 0 0 10px 0;
+	padding: 5px 0px 10px 0px;
+	width: 100%;
+}
+
+.el-metabox textarea{
+	width: 99.9%;
+	border: 1px solid #ccc;
+	line-height: 150%;
+	outline: 0;
+	padding: 10px;
+	margin: 10px 10px 0 0;
+	resize: vertical;
+}
+
+.el-metabox  small{color: #ccc}
+
+.title-meta{
+	
+	font-size: 30px;
+	background: #eee;
+	padding:10px 15px;
+	border-radius: 5px;
+	
+}
+

@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fullbase Plugin\n"
+"POT-Creation-Date: 2015-08-28 15:45+0100\n"
+"PO-Revision-Date: 2015-08-28 15:45+0100\n"
+"Last-Translator: Andrea Marchetti <afmarchetti@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../inc/contents-custom-post-type.php:12
+msgid "Grid"
+msgstr ""
+
+#: ../inc/contents-custom-post-type.php:13
+msgid "Content"
+msgstr "Contenuto"
+
+#: ../inc/contents-custom-post-type.php:14
+msgid "Add Content"
+msgstr "Aggiungi Contenuto"
+
+#: ../inc/contents-custom-post-type.php:15
+msgid "Add New Content"
+msgstr "Aggiungi Nuovo Contenuto"
+
+#: ../inc/contents-custom-post-type.php:16
+msgid "Edit Content"
+msgstr "Modifica Contenuto"
+
+#: ../inc/contents-custom-post-type.php:17
+msgid "New Content"
+msgstr "Nuovo Contenuto"
+
+#: ../inc/contents-custom-post-type.php:18
+msgid "All Contents"
+msgstr "Contenuti"
+
+#: ../inc/contents-custom-post-type.php:19
+msgid "View Content"
+msgstr "Visualizza Contenuto"
+
+#: ../inc/contents-custom-post-type.php:20
+msgid "Search Content"
+msgstr "Cerca Contenuto"
+
+#: ../inc/contents-custom-post-type.php:21
+msgid "No Contents found"
+msgstr "Nessun Contenuto Trovato"
+
+#: ../inc/contents-custom-post-type.php:22
+msgid "No Contents found in the trash"
+msgstr "Nessun Contenuto trovato nel cestino"
+
+#: ../inc/contents-metabox.php:49
+msgid "Subtitle"
+msgstr ""
+
+#: ../inc/contents-metabox.php:49
+msgid "Insert subtitle text, max 5/6 words."
+msgstr ""
+
+#: ../inc/video-support.php:21 ../inc/video-support.php:125
+msgid "Youtube & Vimeo - Video"
+msgstr ""
+
+#: ../inc/video-support.php:48 ../inc/video-support.php:152
+msgid ""
+"To show a video in the article paste the link of a <strong>YouTube</strong> "
+"or <strong>Vimeo</strong> video in the box below."
+msgstr ""
+
+#: ../inc/video-support.php:49 ../inc/video-support.php:153
+msgid ""
+"To set an <strong>Image as a Preview</strong> of the video use the "
+"<strong>Featured Image</strong> oh the right."
+msgstr ""
+
+#~ msgid "Options"
+#~ msgstr "Opzioni"
+
+#~ msgid "Slider"
+#~ msgstr "Slider"
+
+#~ msgid "Slide"
+#~ msgstr "Slide"
+
+#~ msgid "Add Slide"
+#~ msgstr "Aggiungi Slide"
+
+#~ msgid "Edit Slide"
+#~ msgstr "Modifica Slide"
+
+#~ msgid "New Slide"
+#~ msgstr "Nuova Slide"
+
+#~ msgid "All Slides"
+#~ msgstr "Tutte le Slide"
+
+#~ msgid "View Slide"
+#~ msgstr "Visualizza Slide"
+
+#~ msgid "Slide Not found"
+#~ msgstr "Slide non trovata"
